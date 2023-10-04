@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--Metaetiquetas y links hoja de estilos y cdn para bootstrap y animate-->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="./img/icono papas.ico">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="./css/estilos.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" /> 
+   <title>Tienda</title>
+   <meta name="description" content="Tienda para comprar nuestros productos">
+   <meta name="keywords" content="papas papines papas consumo papas noissette mini papas">
+</head>
+<body>
+   <header>
+         <!--Logo y titulo-->
+      <div class="container-fluid">
+         <div class="row">
+            <div class="col-12 col-sm-10 col-lg-1">
+            <a id="logo" href="../index.html">
+               <img src="./img/logo papas.png" alt="imagen logo" class="log">
+            </a>
+            </div>
+            <div class="col-12 col-sm-10 col-lg-2 ">
+               <p class="tituloLogo">Papas Para Todos</p>
+            </div>
+            <!--Menu desktop-->
+            <nav class="col-12 col-sm-10 col-lg-9">
+               <ul class="desktop col-12 paginas">
+                  <li>
+                     <a href="../index.html">Inicio</a>
+                  </li>
+                  <li>
+                     <a href="../index.html">Nosotros</a>
+                  </li>
+                  <li>
+                     <a href="../index.html">Productos</a>
+                  </li>
+                  <li class="carroNav">
+                     <a href="../index.html">Tienda</a>
+                     <img class="carrito" src="./img/carrito.png" alt="comprar">
+                  </li>
+                  <li>
+                     <a href="../index.html">Contacto</a>
+                  </li>
+               </ul>
+            </nav>
+               <!--Logo, titulo y menu versión móvil-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+               <div class="container-fluid">
+                  <a class="navbar-brand" href="../index.html" id="logo2" >
+                     <img src="./img/logo papas.png" alt="imagen logo">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                        </li>                    
+                     </ul>
+                  </div>
+               </div>
+            </nav>
+         </div>        
+      </div>        
+   </header>
+   <main>
+      <!--Titulo principal y fotos con descripción de la tienda online-->
+      <div class="container">
+         <div class="row">
+            <div class="online">
+               <h1 class="col-12 animate__animated animate__fadeInDown">Tienda online</h1>
+            </div>          
+            <h2 class=" comprar col-12 animate__animated animate__bounce">Comprar aqui</h2>
+            <div id="cards1" class="row">
+            
+            </div>
+            <hr class="linea">
+            <h4 class="encabezado">Tu compra:</h4>            
+            <table class="table">
+               <thead>
+                  <tr>
+                     <th class="titTabla" scope="col">ID</th>
+                     <th class="titTabla" scope="col">PRODUCTO</th>
+                     <th class="titTabla" scope="col">PRECIO</th>
+                  </tr>
+               </thead>
+               <tbody id="tablaC">
+                  
+               </tbody>
+               <tbody>
+                  <div class="totalCom">
+                     <tr>
+                        <th id="totalCompra" class="titTabla" scope="col">TOTAL: </th>
+                     </tr>
+                  </div>
+                  
+               </tbody>
+               </table>
+               <div class="botones10">
+                  <button id="terminar" type="button" class="btn btn-success boton10">Finalizar compra</button>
+                  <button id="borrar" type="button" class="btn btn-success boton11">Vaciar carrito <img class="bote" src="./img/bote.jpg" alt=""></button>
+               </div>
+         </div>
+         </div>
+         <h4 class="tituloForm animate__animated animate__fadeInDown">Completa nuestro formulario para coordinar el envío</h4>
+         <!--Formulario de contacto-->
+            <div class="container-fluid">
+               <div class="row">                
+                     <div class="col-12 col-sm-12 col-lg-11">
+                        <form id="form" action="" class="formulario">
+                           <div class="col-12 col-sm-10 col-lg-9">
+                                 <input id="nombre" type="text" name="nombre" placeholder="nombre">
+                           </div>
+                           <div class="col-12 col-sm-10 col-lg-9">
+                                 <input id="documento" type="number" name="dni" placeholder="documento">
+                                 <small id="msj"></small>
+                           </div>
+                           <div class="col-12 col-sm-10 col-lg-9">
+                                 <input id="correo" type="email" name="correo" placeholder="correo electronico">
+                                 <small id="msj2"></small>
+                           </div>
+                           <div class="col-12 col-sm-10 col-lg-9">
+                                 <input id="clave" type="password" name="contraseña" placeholder="contraseña">
+                                 <small id="msj3"></small>
+                           </div>
+                           <div class="col-12 col-sm-10 col-lg-9">
+                                 <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Comentarios no disponible"></textarea>
+                           </div>
+                           <div>
+                              <button id="btnG" type="button" class="btn btn-outline-success guardar">Guardar</button>
+                              <small id="msj11"></small>
+                        </div>
+                           <div>
+                                 <button id="btnEnviar" type="submit" class="btn btn-outline-success" >Terminar</button>
+                                 <small id="msj10"></small>
+                           </div>
+                           
+                        </form>        
+                     </div>
+               </div>
+            </div>
+         </div>
+         <tbody id="dato">
+
+         </div>
+            <!--Links para subir versión desktop y mobile-->
+         <div class="container-fluid">
+            <div class="col-12 col-sm-10 col-lg-1">
+               <a class="subirDesk" href="#logo" >Ir arriba</a>
+               <a class="subirM" href="#logo2" >Ir arriba</a>
+            </div>
+         </div>         
+   </main>
+   <!--pie de página-->  
+   <footer class="f">
+      <div  class="container-fluid">
+         <div class="row">
+            <b class="col-12 col-sm-10 col-lg-3 referencia">San Martin 0000</b>
+            <b class="col-12 col-sm-10 col-lg-3 referencia">Telefono: 0800-0101-010101</b>
+            <b class="col-12 col-sm-10 col-lg-3 referencia">Mail: ppt23@outlook.com</b> 
+            <b class="col-12 col-sm-10 col-lg-3 referencia">Todos los derechos reservados</b> 
+         </div>        
+         </div>               
+   </footer>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="codigo.js"></script>
+</body>
+</html>

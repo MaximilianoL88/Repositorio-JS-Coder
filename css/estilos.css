@@ -1,0 +1,737 @@
+@charset "UTF-8";
+/*ESTILOS GENERALES*/
+/*fuente importada*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/*fuente para todos los elementos*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*propiedades h1*/
+h1 {
+  color: rgb(40, 126, 40);
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/*propiedades h2*/
+h2 {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 30px;
+  color: rgb(40, 126, 40);
+  font-size: 36px;
+}
+
+h4 {
+  color: rgb(40, 126, 40);
+  font-size: 36px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  margin-top: 50px;
+  text-decoration: underline;
+}
+
+a {
+  color: rgb(82, 3, 82);
+}
+
+/* propiedades encabezado y navegacion */
+header div div {
+  display: flex;
+  align-items: center;
+}
+header div div div a img {
+  width: 100px;
+  height: 100px;
+}
+header div div div p {
+  display: flex;
+  justify-content: flex-start;
+}
+header div div nav {
+  display: flex;
+}
+header div div nav ul {
+  display: flex;
+  justify-content: end;
+}
+header div div nav ul li {
+  padding: 10px;
+  background-color: white;
+  display: flex;
+}
+header div div nav ul li a {
+  color: green;
+  text-decoration: none;
+}
+
+li a:hover {
+  font-weight: bold;
+}
+
+/*medidas para el logo*/
+body header div a img.logo {
+  width: 150px;
+  height: 150px;
+}
+
+/*color nombre logo*/
+.tituloLogo {
+  color: rgb(7, 107, 7);
+  font-weight: bold;
+}
+
+.titulo22 {
+  color: rgb(7, 107, 7);
+  padding-right: 10px;
+}
+
+.log {
+  border-radius: 10%;
+}
+
+/* estilo nav*/
+.paginas {
+  list-style-type: none;
+}
+
+.nav-link {
+  color: green;
+}
+
+li.nav-item {
+  padding: 8px;
+}
+
+.respon {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  margin-top: 75px;
+}
+
+.respon2 {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  margin-top: 90px;
+  height: 20px;
+}
+
+li:hover {
+  background-color: rgb(130, 219, 130);
+}
+
+/*propiedades body*/
+body {
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: rgb(241, 234, 234);
+}
+
+/* propiedades seccion principal */
+main section div {
+  display: flex;
+  justify-content: center;
+}
+main section div article {
+  display: flex;
+  justify-content: center;
+}
+
+/*propiedades para el parrafo debajo de nuestro h1*/
+.parrafo {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  width: 800px;
+  background-color: rgb(32, 105, 32);
+  padding: 30px 15px;
+  font-size: 18px;
+  font-weight: lighter;
+  border-radius: 7px;
+  margin-bottom: 40px;
+  background: linear-gradient(rgb(32, 105, 32), rgb(3, 141, 3));
+}
+
+/*tamaño fotos del index*/
+body section img {
+  width: 275px;
+  height: 275px;
+  padding: 30px;
+}
+
+/*estilos para los textos de las fotos del index*/
+.nombre {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(28, 131, 28);
+}
+
+p.irAseccion {
+  font-size: 24px;
+  text-decoration: underline;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(28, 131, 28);
+}
+
+/*ANIMACIONES*/
+.papas11:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nombre:hover {
+  color: green;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/*ubicacion boton subir*/
+a.subir {
+  display: inline;
+  padding-left: 25px;
+}
+
+.formulario{
+  margin-bottom: 80px;
+}
+
+.aTienda {
+  text-decoration: none;
+}
+
+/*propiedades pie de pagina*/
+footer.f {
+  margin-top: 40px;
+}
+footer.f b.referencia {
+  padding-right: 10px;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  background-color: rgb(32, 105, 32);
+  background: linear-gradient(rgb(32, 105, 32), rgb(3, 167, 3));
+}
+
+/*estilos nuestros productos*/
+.imgT {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imgProducto {
+  width: 280px;
+  height: 280px;
+  display: inline-block;
+  padding: 10px;
+}
+
+.contenedorTienda {
+  display: flex;
+  justify-content: center;
+}
+
+.IrAtienda {
+  font-size: 22px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  color: green;
+}
+
+h2.comprar {
+  text-decoration: underline;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+p.descrip {
+  visibility: hidden;
+  text-align: center;
+  color: green;
+  margin-top: -10px;
+}
+
+.imgT:hover p {
+  visibility: visible;
+}
+
+/*ANIMACION FOTO PRODUCTOS*/
+.imgProducto:hover {
+  scale: 1.1;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/*disposicion de las fotos de la tienda*/
+div.tienda10 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.link {
+  padding-left: 15px;
+}
+
+/*propiedades para los elementos debajo de las fotos de la tienda*/
+.precio {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+div div#precio2 {
+  width: 100px;
+  margin: auto;
+}
+
+.carrito {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+/*ANIMACIONES TIENDA*/
+.imgT:hover {
+  scale: 1.05;
+  transition: 0.3s;
+}
+
+.carrito:hover {
+  cursor: pointer;
+  scale: 1.2;
+  border: 3px solid rgb(2, 75, 35);
+}
+
+.precio:hover {
+  color: rgb(45, 10, 110);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.table {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.fotoTienda {
+  border: solid 2px grey;
+}
+
+.boton {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.encabezado {
+  font-size: 30px;
+  text-decoration: underline;
+  margin-top: 30px;
+  color: green;
+}
+
+.boton:hover {
+  background-color: rgb(190, 127, 10);
+}
+
+.botones10{
+  display: flex;
+  justify-content: space-around;
+}
+.boton10{
+  margin-top: 40px;
+  margin-bottom: 100px;
+  width: 200px;
+  height: 50px;
+}
+
+.boton10:hover{
+  background-color: rgb(16, 116, 46);
+}
+
+.boton11:hover{
+  background-color: rgb(167, 25, 25);
+}
+
+.boton11{
+  margin-top: 40px;
+  margin-bottom: 100px;
+  background-color: rgb(216, 65, 65);
+}
+
+td.carrito10{
+  background-color: rgb(224, 222, 222);
+  height: 30px;
+  border: 1px solid gray;
+}
+th.carrito10{
+  background-color: rgb(224, 222, 222);
+  height: 40px;
+  border: 1px solid gray;
+}
+
+th.titTabla {
+  font-size: 20px;
+  font-family: monospace;
+  color: rgb(31, 180, 43);
+  border: 1px solid gray;
+}
+th.total{
+  display: flex;
+  justify-content: center;
+}
+
+.bote {
+  height: 30px;
+  width: 30px;
+  background-color:rgb(216, 65, 65) ;
+  border-radius: 10px;
+}
+
+hr.linea {
+  margin-top: 100px;
+  border-top: solid 3px black;
+}
+
+/*PROPIEDADES H1 SOBRE EN FORMULARIO*/
+h1.tituloForm {
+  margin-top: 100px;
+}
+
+/*propiedades iconos redes*/
+div.redes20 {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+}
+
+.redes {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 15%;
+  margin-bottom: 15px;
+}
+
+.redes:hover {
+  scale: 1.3;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+a.redesN {
+  text-align: center;
+}
+
+.redes20 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.redes10 {
+  display: flex;
+  flex-direction: column;
+}
+
+.redes3 {
+  text-decoration: none;
+  color: rgb(76, 128, 76);
+}
+
+.redes3:hover {
+  color: green;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* propiedades formulario de contacto */
+div h2.formu {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
+
+.formulario {
+  margin-top: 75px;
+  width: 1000px;
+}
+
+textarea, input {
+  border: solid green 1px;
+}
+
+input:hover {
+  background-color: rgb(176, 226, 176);
+}
+
+textarea:hover {
+  background-color: rgb(176, 226, 176);
+}
+
+button {
+  background-color: rgb(46, 192, 46);
+}
+
+.guardar:hover{
+  background-color: rgb(87, 87, 148);
+}
+
+label {
+  color: green;
+}
+
+/*ubicacion mapa*/
+iframe {
+  margin-top: 40px;
+  margin-bottom: 75px;
+}
+
+/*Titulo sobre el mapa*/
+p.direccion {
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  color: rgb(40, 126, 40);
+  text-decoration: underline;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+/* propiedades contenido principal nosotros */
+.imghistoria {
+  margin-top: 35px;
+}
+
+p.historia {
+  padding: 15px;
+  background-color: rgb(55, 182, 55);
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+/*estilo titulo video*/
+div p.cosecha {
+  font-size: 32px;
+  color: rgb(40, 126, 40);
+  text-decoration: underline;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+
+/*ubicacion foto seccion nosotros*/
+.papaAcampo {
+  width: 300px;
+  height: 300px;
+  display: block;
+}
+
+
+
+/*MEDIAS QUERIES MENU*/
+@media (max-width: 480px) {
+  li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  header div div nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 480px) {
+  header div div nav ul li a {
+    font-size: 13px;
+    line-height: 0%;
+    text-align: center;
+    padding: 1px;
+  }
+}
+@media (min-width: 481px) {
+  header div div nav {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+@media (max-width: 480px) {
+  ul.desktop {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  .respon {
+    display: none;
+  }
+}
+@media (min-width: 480px) {
+  nav.navbar {
+    display: none;
+  }
+  .subirM {
+    display: none;
+  }
+}
+/*MEDIAS QUIERIES FOTOS PRODUCTOS Y REDES*/
+@media (max-width: 480px) {
+  div p.nombre {
+    text-align: center;
+    padding-left: 0px;
+  }
+}
+@media (max-width: 480px) {
+  .papas11 {
+    text-align: center;
+  }
+  .imgT {
+    text-align: center;
+  }
+  .precio {
+    margin-top: 15px;
+  }
+  .redes10 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+  .redes20 {
+    padding: 15px;
+  }
+}
+/*MEDIAS QUIERIES FOOTER*/
+@media (max-width: 480px) {
+  footer div div b.referencia {
+    line-height: normal;
+  }
+}
+/*MEDIAS QUIERIES DE TITULOS, SUBTITULOS Y DESCRIPCIONES*/
+@media (max-width: 480px) {
+  h2.historia {
+    margin-top: 100px;
+  }
+}
+@media (max-width: 480px) {
+  p.cosecha {
+    margin-top: 40px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 480px) {
+  h1.formu {
+    margin-top: 75px;
+  }
+}
+@media (max-width: 480px) {
+  #logo {
+    display: none;
+  }
+  .subirDesk {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .tituloLogo {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .historia1 {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*MEDIAS QUIERIES FORMULARIO*/
+@media (max-width: 480px) {
+  .formulario {
+    width: 300px;
+  }
+}
+/*CONDICIONAL PARA PARRAFO PRINCIPAL*/
+p.parrafo {
+  background: linear-gradient(rgb(32, 105, 32), rgb(3, 141, 3));
+}
+
+/*CONDICIONAL PARA LOS H1*/
+h1 {
+  color: rgb(40, 126, 40);
+}
+
+/*CONDICIONAL PARA LOS H2*/
+h2.col-12 {
+  color: rgb(40, 126, 40);
+}
+
+/*CONDICIONAL BODY*/
+body {
+  background-color: rgb(241, 234, 234);
+}
+
+/*MIXIN H1*/
+h1 {
+  color: rgb(40, 126, 40);
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+/*MIXIN FOTOS DE PRODUCTOS*/
+.imgProducto {
+  width: 300px;
+  height: 300px;
+  display: inline-block;
+  padding: 50px;
+}
+
+/*MIXIN CARRITO TIENDA*/
+#carrito {
+  width: 40px;
+  height: 40px;
+  margin-left: 30px;
+  margin-bottom: 15px;
+  border: 1px solid black;
+}
+
+.twitter {
+  background: white;
+}
+
+.instagram {
+  background: white;
+}
+
+.facebook {
+  background: white;
+}
+
+.correo {
+  background: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */
